@@ -123,7 +123,7 @@ def load_model():
     with st.spinner("🚀 Loading AI model (Qwen 2.5)..."):
         llm = pipeline(
             "text-generation",
-            model="Qwen/Qwen2.5-1.5B-Instruct",
+            model="Qwen/Qwen2.5-0.5B-Instruct",
             device=-1
         )
     return llm
